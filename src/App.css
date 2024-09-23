@@ -1,38 +1,124 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f7f8fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  padding: 40px;
+  margin-top: 60px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #2e384d;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #717785;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #a0a4a8;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  padding: 20px;
+  min-height: 200px;
+  max-height: 300px;
+  background-color: #f1f2f7;
+  border-radius: 12px;
+  overflow-y: auto;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+}
+
+.placeholder {
+  color: #bbb;
+  font-size: 16px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+
+.btn-primary {
+  background-color: #4caf50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-primary:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-secondary {
+  background-color: #f44336;
+  color: white;
 }
+
+.btn-secondary:hover {
+  background-color: #e53935;
+}
+
+.btn-copy {
+  background-color: #2196f3;
+  color: white;
+}
+
+.btn-copy:hover {
+  background-color: #1976d2;
+}
+
+.unsupported {
+  text-align: center;
+  font-size: 18px;
+  color: red;
+}
+
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: -70px;
+}
+
